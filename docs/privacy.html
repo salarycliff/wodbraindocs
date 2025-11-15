@@ -16,7 +16,7 @@
   </head>
   <body>
     <h1>WODBrain Privacy Policy</h1>
-    <p class="muted"><strong>Effective date:</strong> 2025‑11‑06</p>
+    <p class="muted"><strong>Effective date:</strong> 2025-11-13</p>
 
     <h2>Overview</h2>
     <p>
@@ -28,24 +28,19 @@
     <h2>Information We Collect</h2>
     <ul>
       <li>
-        <strong>Account information:</strong> When you sign in with Google, we receive
-        your Firebase User ID (UID) and email address.
+        <strong>Account information:</strong> When you sign in with Google, we receive your Firebase User ID (UID) and email address.
       </li>
       <li>
-        <strong>Purchases & subscriptions:</strong> We receive subscription status and
-        related metadata from RevenueCat. We do not store full payment details.
+        <strong>Purchases &amp; subscriptions:</strong> We receive subscription status and related metadata from RevenueCat. We do not store full payment details.
       </li>
       <li>
-        <strong>Usage metrics:</strong> We count OCR requests and basic service usage to
-        enforce free‑tier limits and improve reliability.
+        <strong>Usage metrics:</strong> We count OCR and AI extraction requests and basic service usage to enforce free-tier limits and improve reliability.
       </li>
       <li>
-        <strong>Content you submit:</strong> Images you send for OCR are transmitted to
-        our server and processed by Google Cloud Vision to return text.
+        <strong>Content you submit:</strong> Images you send for OCR are transmitted to our server and processed by Google Cloud Vision to return text. If you opt to use AI plan extraction, the extracted workout text (not the image) may be sent to our AI provider to structure it into a timer plan.
       </li>
       <li>
-        <strong>Device & logs:</strong> Basic diagnostic logs (e.g., timestamps, request
-        identifiers, and error traces) to operate and secure the service.
+        <strong>Device &amp; logs:</strong> Basic diagnostic logs (e.g., timestamps, request identifiers, status codes, error traces). In some cases we may log short, truncated previews of submitted text to help debug failures; we minimize this and avoid logging image content.
       </li>
     </ul>
 
@@ -55,42 +50,41 @@
       <li>Provide premium features and verify entitlements.</li>
       <li>Process images via Google Cloud Vision to extract text.</li>
       <li>Operate, secure, and improve the app and backend services.</li>
-      <li>Enforce fair‑use limits for free tiers.</li>
+      <li>Enforce fair-use limits for free tiers.</li>
+      <li>Optionally structure extracted workout text into a timer plan via our AI provider when enabled.</li>
     </ul>
 
     <h2>Sharing with Service Providers</h2>
     <ul>
-      <li>
-        <strong>Firebase (Google):</strong> Authentication and Firestore data storage.
-      </li>
-      <li>
-        <strong>Google Cloud Vision:</strong> Optical character recognition (OCR) of images you submit.
-      </li>
-      <li>
-        <strong>RevenueCat:</strong> Subscription management and entitlement status.
-      </li>
+      <li><strong>Firebase (Google):</strong> Authentication and Firestore data storage.</li>
+      <li><strong>Google Cloud Vision:</strong> OCR of images you submit.</li>
+      <li><strong>RevenueCat:</strong> Subscription management and entitlement status.</li>
+      <li><strong>OpenAI:</strong> When AI plan extraction is enabled, we send extracted workout text (no images) to OpenAI to convert it into a structured timer plan.</li>
     </ul>
     <p>We do not sell your personal data.</p>
 
     <h2>Data Retention</h2>
     <ul>
-      <li>Account and subscription records: retained while your account exists.</li>
-      <li>Usage counters: retained for monthly quota tracking and audits.</li>
-      <li>
-        Images: transmitted for processing and not stored long‑term beyond what is
-        necessary to fulfill the request and operate logs.
-      </li>
+      <li><strong>Account and subscription records:</strong> Retained while your account exists.</li>
+      <li><strong>Usage counters:</strong> Retained for monthly quota tracking and audits.</li>
+      <li><strong>Images:</strong> Transmitted for processing and not stored long-term beyond what is necessary to fulfill the request and operate logs.</li>
+      <li><strong>Logs:</strong> Retained for a limited period to operate, secure, and troubleshoot the service, then deleted or aggregated.</li>
     </ul>
 
     <h2>Security</h2>
-    <p>All data is transmitted over HTTPS. Access to backend systems is restricted and monitored.</p>
+    <p>
+      All data is transmitted over HTTPS/TLS. Provider systems (Firebase/Google Cloud,
+      RevenueCat, and OpenAI) use encryption at rest. We use access controls and
+      least-privilege credentials for backend services. We do not implement
+      end-to-end encryption for user-submitted images or text; data is protected in
+      transit and at rest by our infrastructure and service providers.
+    </p>
 
-    <h2>Your Choices & Rights</h2>
+    <h2>Your Choices &amp; Rights</h2>
     <ul>
       <li>You may sign out at any time.</li>
-      <li>
-        To request deletion of account‑associated data, contact us using the email below.
-      </li>
+      <li>To request deletion of account-associated data, contact us using the email below.</li>
+      <li>You can choose not to use AI plan extraction; OCR-only functionality will remain available subject to your plan.</li>
     </ul>
 
     <h2>Children’s Privacy</h2>
@@ -98,8 +92,7 @@
 
     <h2>International Transfers</h2>
     <p>
-      Data may be processed on servers located in the United States and other
-      regions where our providers operate.
+      Data may be processed on servers located in the United States and other regions where our providers operate.
     </p>
 
     <h2>Changes to This Policy</h2>
